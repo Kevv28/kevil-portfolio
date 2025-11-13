@@ -447,9 +447,9 @@ ul {
 }
 
 .tags {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   gap: 8px;
-  flex-wrap: wrap;
   margin-top: 16px;
 }
 
@@ -458,6 +458,10 @@ ul {
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.06);
   font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .achievements-grid {
